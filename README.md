@@ -1,4 +1,4 @@
-# Spectrally logarithmic regularied Fourier NEural Operators (S-FNO) for randomly forced Burgers dynamics
+## log-Spectrally regularized Fourier NEural Operators (S-FNO) for randomly forced Burgers dynamics
 
 Modular PyTorch implementation of the five-objective Fourier neural operator study, including data generation, training, ensemble diagnostics, finer-grid inference, inverse forcing recovery, and figure export.
 
