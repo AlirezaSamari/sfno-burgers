@@ -1,0 +1,8 @@
+{
+  "standard": "model_standard_fno.pt",
+  "spectral": "model_fno_plus_spectral.pt",
+  "gradient": "model_fno_plus_gradient.pt",
+  "residual": "model_hybrid_pino.pt",
+  "sfno": "model_s-fno_ours.pt"
+}
+

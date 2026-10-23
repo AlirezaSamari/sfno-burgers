@@ -1,0 +1,100 @@
+{
+  "profile": "paper",
+  "seed": 42,
+  "physics": {
+    "length": 1.0,
+    "duration": 1.0,
+    "viscosity": 0.006366197723675814,
+    "noise_scale": 0.5,
+    "forcing_modes_x": 16,
+    "forcing_modes_t": 16,
+    "initial_amplitude": 1.5,
+    "covariance_jitter": 1e-05,
+    "initial_normalization_epsilon": 1e-08,
+    "minimum_substeps": 200,
+    "diffusion_cfl_divisor": 2.5,
+    "advection_cfl_speed": 4.0
+  },
+  "data": {
+    "nx": 64,
+    "nt": 64,
+    "train_samples": 800,
+    "test_samples": 500,
+    "generation_batch_size": 50,
+    "train_length_scale": 0.2,
+    "test_length_scale": 0.1
+  },
+  "architecture": {
+    "modes": 16,
+    "width": 64,
+    "num_layers": 4,
+    "projection_width": 128
+  },
+  "training": {
+    "epochs": 1301,
+    "batch_size": 16,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "adam_beta1": 0.9,
+    "adam_beta2": 0.999,
+    "adam_epsilon": 1e-08,
+    "gradient_clip": 1.0,
+    "scheduler_step": 100,
+    "scheduler_gamma": 0.5,
+    "spectral_weight": 0.1,
+    "increment_weight": 0.05,
+    "residual_weight": 0.1,
+    "spectral_floor": 1e-08,
+    "checkpoint_interval": 100
+  },
+  "diagnostics": {
+    "inference_batch_size": 50,
+    "spectral_floor": 1e-08,
+    "late_time_fraction": 0.5,
+    "gradient_histogram_bins": 100,
+    "gradient_plot_edges": 100,
+    "gradient_min": -30.0,
+    "gradient_max": 15.0,
+    "structure_max_shift_divisor": 3,
+    "realization_index": 20,
+    "cross_section_fractions": [
+      0.25,
+      0.75
+    ],
+    "coverage_z": [
+      1.645,
+      1.96,
+      2.576
+    ],
+    "gaussian_std_epsilon": 1e-08,
+    "cross_section_spread": 2.0,
+    "gradient_energy_spread": 1.96
+  },
+  "resolution": {
+    "nx": 128,
+    "nt": 128,
+    "length_scale": 0.1
+  },
+  "inverse": {
+    "observation_index": 10,
+    "seed": 42,
+    "iterations": 2000,
+    "learning_rate": 0.05,
+    "regularization": 0.0005,
+    "adam_beta1": 0.9,
+    "adam_beta2": 0.999,
+    "adam_epsilon": 1e-08,
+    "scheduler_step": 200,
+    "scheduler_gamma": 0.5
+  },
+  "plotting": {
+    "png_dpi": 600,
+    "contour_levels": 100,
+    "legends": true
+  },
+  "benchmark": {
+    "warmup": 20,
+    "model_repeats": 100,
+    "solver_repeats": 10
+  }
+}

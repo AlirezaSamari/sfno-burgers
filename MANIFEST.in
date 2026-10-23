@@ -1,0 +1,9 @@
+include README.md
+include requirements-tested.txt
+include .gitignore
+include .github/workflows/tests.yml
+recursive-include docs *.md *.json
+recursive-include tests *.py
+recursive-include checkpoints *.md *.json
+global-exclude *.py[cod]
+

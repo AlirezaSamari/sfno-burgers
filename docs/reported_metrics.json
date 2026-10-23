@@ -1,0 +1,62 @@
+{
+  "kind": "reported_metrics",
+  "source": "Manuscript Tables 1 and 2",
+  "provenance": "Recorded study results; not recomputed by this repository release.",
+  "metrics": {
+    "standard": {
+      "mean_error_percent": 7.78,
+      "variance_error_percent": 1.23,
+      "log_spectrum_error_percent": 11.41,
+      "gradient_pdf_error_percent": 7.26,
+      "gradient_energy_error_percent": 6.31,
+      "coverage_90_percent": 89.68,
+      "coverage_95_percent": 96.72,
+      "coverage_99_percent": 99.98,
+      "gaussian_crps": 0.2043
+    },
+    "spectral": {
+      "mean_error_percent": 11.82,
+      "variance_error_percent": 2.38,
+      "log_spectrum_error_percent": 1.08,
+      "gradient_pdf_error_percent": 4.43,
+      "gradient_energy_error_percent": 4.84,
+      "coverage_90_percent": 89.57,
+      "coverage_95_percent": 96.64,
+      "coverage_99_percent": 99.98,
+      "gaussian_crps": 0.2043
+    },
+    "gradient": {
+      "mean_error_percent": 7.94,
+      "variance_error_percent": 1.03,
+      "log_spectrum_error_percent": 11.53,
+      "gradient_pdf_error_percent": 7.49,
+      "gradient_energy_error_percent": 6.24,
+      "coverage_90_percent": 89.74,
+      "coverage_95_percent": 96.76,
+      "coverage_99_percent": 99.98,
+      "gaussian_crps": 0.2043
+    },
+    "residual": {
+      "mean_error_percent": 14.97,
+      "variance_error_percent": 14.87,
+      "log_spectrum_error_percent": 7.13,
+      "gradient_pdf_error_percent": 3.81,
+      "gradient_energy_error_percent": 21.0,
+      "coverage_90_percent": 89.71,
+      "coverage_95_percent": 96.56,
+      "coverage_99_percent": 99.98,
+      "gaussian_crps": 0.2044
+    },
+    "sfno": {
+      "mean_error_percent": 10.08,
+      "variance_error_percent": 1.51,
+      "log_spectrum_error_percent": 0.7,
+      "gradient_pdf_error_percent": 4.14,
+      "gradient_energy_error_percent": 4.94,
+      "coverage_90_percent": 89.75,
+      "coverage_95_percent": 96.75,
+      "coverage_99_percent": 99.98,
+      "gaussian_crps": 0.2043
+    }
+  }
+}
